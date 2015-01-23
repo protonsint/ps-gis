@@ -1,2 +1,6 @@
 export CATALINA_OPTS=-DGEOSERVER_DATA_DIR=${OPENSHIFT_DATA_DIR}geoserver_data
-
+export _JAVA_OPTIONS="-server"
+export _JAVA_OPTIONS="-Xmx256M -Xms48m"
+export _JAVA_OPTIONS="-XX:SoftRefLRUPolicyMSPerMB=36000"
+export _JAVA_OPTIONS="-XX:MaxPermSize=128m"
+export _JAVA_OPTIONS="-XX:+UseParallelGC"
